@@ -1,0 +1,66 @@
+.mergesort-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tree-container {
+    margin-top: 20px;
+  }
+  
+  .tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .step {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .node {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .original {
+    font-size: 1.2em;
+  }
+  
+  .highlight-left {
+    background-color: #c8e6c9; /* Light green for the left part */
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  .highlight-right {
+    background-color: #ffe0b2; /* Light yellow for the right part */
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  .final-result {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
