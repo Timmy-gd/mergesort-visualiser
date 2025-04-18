@@ -1,73 +1,22 @@
 .mergesort-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.mergesort-container h1 {
-  color: #3a4a6d;
-  margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 20px;
 }
 
 input {
-  padding: 12px 15px;
-  width: 70%;
-  border: 2px solid #d1d9e6;
-  border-radius: 25px;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  outline: none;
-  transition: all 0.3s ease;
-  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.05);
-}
-
-input:focus {
-  border-color: #6c7ae0;
-  box-shadow: 0 0 10px rgba(108, 122, 224, 0.3);
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 10px;
 }
 
 button {
-  margin: 0.5rem;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
-  background: linear-gradient(135deg, #6c7ae0 0%, #8e54e9 100%);
-  color: white;
-  font-weight: bold;
+  margin: 5px;
+  padding: 10px 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(108, 122, 224, 0.3);
-  font-size: 1rem;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(108, 122, 224, 0.4);
-}
-
-button:active {
-  transform: translateY(0);
-}
-
-button:disabled {
-  background: linear-gradient(135deg, #cccccc 0%, #999999 100%);
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
 }
 
 .tree-container {
-  margin-top: 2rem;
-  background: white;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-top: 20px;
 }
 
 .tree {
@@ -78,98 +27,40 @@ button:disabled {
 
 .step {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 1rem 0;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  border-left: 5px solid #6c7ae0;
-}
-
-.step:hover {
-  transform: translateX(5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  justify-content: center;
+  margin: 10px 0;
 }
 
 .node {
-  margin: 0.5rem 0;
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: rgba(245, 247, 250, 0.7);
-  font-size: 1.1rem;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
 .original {
   font-size: 1.2em;
-  font-weight: 500;
-  color: #3a4a6d;
 }
 
 .highlight-left {
-  background-color: #a8e6cf;
+  background-color: #c8e6c9; /* Light green for the left part */
   font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 5px;
-  margin: 0 2px;
-  color: #1a3e2f;
-  animation: pulseLeft 1.5s infinite;
+  padding: 2px 5px;
+  border-radius: 3px;
 }
 
 .highlight-right {
-  background-color: #ffaaa5;
+  background-color: #ffe0b2; /* Light yellow for the right part */
   font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 5px;
-  margin: 0 2px;
-  color: #5c1a1a;
-  animation: pulseRight 1.5s infinite;
+  padding: 2px 5px;
+  border-radius: 3px;
 }
 
 .final-result {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%);
-  border-radius: 10px;
-  color: #1a3e2f;
-  font-size: 1.3rem;
+  margin-top: 20px;
+  font-size: 1.5em;
   font-weight: bold;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  animation: celebrate 2s ease;
-}
-
-@keyframes pulseLeft {
-  0% { background-color: #a8e6cf; }
-  50% { background-color: #d4f1e6; }
-  100% { background-color: #a8e6cf; }
-}
-
-@keyframes pulseRight {
-  0% { background-color: #ffaaa5; }
-  50% { background-color: #ffd3b6; }
-  100% { background-color: #ffaaa5; }
-}
-
-@keyframes celebrate {
-  0% { transform: scale(0.9); opacity: 0; }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-@media (max-width: 768px) {
-  .mergesort-container {
-    padding: 1rem;
-  }
-  
-  input {
-    width: 90%;
-  }
-  
-  .step {
-    padding: 1rem;
-  }
 }
